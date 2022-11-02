@@ -91,7 +91,12 @@ public class Prodotto
 
     public double GetPrezzoIvato()
     {
-        return prezzo + (prezzo / 100 * iva);
+        double prezzoIvato = prezzo + (prezzo / 100 * iva);
+        prezzoIvato = Math.Round(prezzoIvato, 2);
+
+        return prezzoIvato;
+
+
     }
     public string GetNomeCodice()
     {
