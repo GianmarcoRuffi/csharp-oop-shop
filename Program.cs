@@ -14,7 +14,9 @@
 //BONUS: create un metodo che restituisca il codice con un pad left di 0 per arrivare a 8 caratteri (ad esempio codice 91 diventa 00000091, mentre codice 123445567 resta come è)
 
 
-Prodotto libro = new Prodotto();
+Prodotto prodottoEsempio = new Prodotto();
+
+
 
 
 
@@ -28,23 +30,18 @@ public class Prodotto
      string nome;
      string descrizione;
      double prezzo;
-     int iva;
-
-    public Prodotto()
-    {
-        Random random = new Random();
-        codice = random.Next(1, 12345678);
-    }
+     double iva;
+ 
 
     // costruttore
     public Prodotto(string nome, string descrizione, float prezzo)
     {
         Random random = new Random();
-        codice = random.Next(1, 12345678);
+        codice = random.Next(1, 10001);
         this.nome = nome;
         this.descrizione = descrizione;
         this.prezzo = prezzo;
-        iva = 22;
+        iva = 0.22;
     }
 
 }
