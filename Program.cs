@@ -1,4 +1,4 @@
-﻿// Refactoring dell'esercizio utilizzando le property
+﻿// Refactoring dell'esercizio utilizzando le properties
 
 
 Prodotto prodottoEsempio = new Prodotto("Romanzo giallo", "Un thriller mozzafiato.", 15.99);
